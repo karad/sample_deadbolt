@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+GET     /2                          controllers.Application.index2()
+GET     /allOk                      controllers.Application.allOk()
+GET     /allNg                      controllers.Application.allNg()
+GET     /kazuOk                     controllers.Application.kazuOk()
+GET     /hiroAndKazuOk              controllers.Application.hiroAndKazuOk()
+GET     /kazuOrHiroOk               controllers.Application.kazuOrHiroOk()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
